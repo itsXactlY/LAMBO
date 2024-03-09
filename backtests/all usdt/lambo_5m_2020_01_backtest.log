@@ -1,0 +1,569 @@
+2024-03-08 16:03:51,671 - freqtrade - INFO - freqtrade 2024.2
+2024-03-08 16:03:51,672 - freqtrade.configuration.load_config - INFO - Using config: user_data/config.json ...
+2024-03-08 16:03:51,672 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Parameter -i/--timeframe detected ... Using timeframe: 5m ...
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 40 ...
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20200101-20200131 ...
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/alca/freqtrade/user_data ...
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Using data directory: user_data/data/binance ...
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Overriding timeframe with Command line argument
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Parameter --cache=day detected ...
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Using "hdf5" to store OHLCV data.
+2024-03-08 16:03:51,673 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20200101-20200131
+2024-03-08 16:03:51,673 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-08 16:03:51,681 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-08 16:03:51,681 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-08 16:03:51,681 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-08 16:03:51,683 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2024-03-08 16:03:51,683 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-08 16:03:51,683 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.51
+2024-03-08 16:03:51,697 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-03-08 16:03:57,400 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2024-03-08 16:03:57,458 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy lambo from '/home/alca/freqtrade/user_data/strategies/lambo.py'...
+2024-03-08 16:03:57,459 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 25.
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 40.
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.5, '120': 0.3, '240': 0.1, '360': 0.07, '480': 0.05, '720': 0.03, '960': 0.01, '1440': 0.005, '2880': 0.003, '4320': 0.001, '5760': 0.0}
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.9
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.003
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.008
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'market', 'exit': 'market', 'emergency_exit': 'market', 'force_entry': 'market', 'force_exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'gtc', 'exit': 'gtc'}
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 25
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: [{'method': 'CooldownPeriod', 'stop_duration_candles': 1}, {'method': 'MaxDrawdown', 'lookback_period_candles': 48, 'trade_limit': 20, 'stop_duration_candles': 4, 'max_allowed_drawdown': 0.2}, {'method': 'StoplossGuard', 'lookback_period_candles': 24, 'trade_limit': 4, 'stop_duration_candles': 2, 'only_per_pair': False}, {'method': 'LowProfitPairs', 'lookback_period_candles': 6, 'trade_limit': 2, 'stop_duration_candles': 60, 'required_profit': 0.02}, {'method': 'LowProfitPairs', 'lookback_period_candles': 24, 'trade_limit': 4, 'stop_duration_candles': 2, 'required_profit': 0.01}]
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: True
+2024-03-08 16:03:57,459 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-08 16:03:57,460 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 40
+2024-03-08 16:03:57,460 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-08 16:03:57,463 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/home/alca/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2024-03-08 16:04:00,264 - freqtrade.data.history.idatahandler - INFO - Price jump in IOTX/USDT, 5m, spot between two candles of 10.24% detected.
+2024-03-08 16:04:00,444 - freqtrade.data.history.idatahandler - WARNING - EUR/USDT, spot, 5m, data starts at 2020-01-03 08:00:00
+2024-03-08 16:04:00,468 - freqtrade.data.history.idatahandler - WARNING - OGN/USDT, spot, 5m, data starts at 2020-01-09 03:00:00
+2024-03-08 16:04:00,491 - freqtrade.data.history.idatahandler - WARNING - DREP/USDT, spot, 5m, data starts at 2020-01-16 14:00:00
+2024-03-08 16:04:00,510 - freqtrade.data.history.idatahandler - WARNING - No history for WRX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,520 - freqtrade.data.history.idatahandler - WARNING - No history for LSK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,529 - freqtrade.data.history.idatahandler - WARNING - No history for BNT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,539 - freqtrade.data.history.idatahandler - WARNING - No history for LTO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,549 - freqtrade.data.history.idatahandler - WARNING - No history for MBL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,559 - freqtrade.data.history.idatahandler - WARNING - No history for COTI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,568 - freqtrade.data.history.idatahandler - WARNING - No history for STPT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,578 - freqtrade.data.history.idatahandler - WARNING - No history for DATA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,588 - freqtrade.data.history.idatahandler - WARNING - No history for SOL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,598 - freqtrade.data.history.idatahandler - WARNING - No history for CTSI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,607 - freqtrade.data.history.idatahandler - WARNING - No history for HIVE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,617 - freqtrade.data.history.idatahandler - WARNING - No history for CHR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,627 - freqtrade.data.history.idatahandler - WARNING - No history for ARDR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,637 - freqtrade.data.history.idatahandler - WARNING - No history for MDT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,646 - freqtrade.data.history.idatahandler - WARNING - No history for STMX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,656 - freqtrade.data.history.idatahandler - WARNING - No history for KNC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,666 - freqtrade.data.history.idatahandler - WARNING - No history for LRC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,676 - freqtrade.data.history.idatahandler - WARNING - No history for PNT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,685 - freqtrade.data.history.idatahandler - WARNING - No history for COMP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,695 - freqtrade.data.history.idatahandler - WARNING - No history for SC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,705 - freqtrade.data.history.idatahandler - WARNING - No history for ZEN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,715 - freqtrade.data.history.idatahandler - WARNING - No history for SNX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,724 - freqtrade.data.history.idatahandler - WARNING - No history for VTHO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,734 - freqtrade.data.history.idatahandler - WARNING - No history for DGB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,744 - freqtrade.data.history.idatahandler - WARNING - No history for SXP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,753 - freqtrade.data.history.idatahandler - WARNING - No history for MKR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,763 - freqtrade.data.history.idatahandler - WARNING - No history for DCR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,773 - freqtrade.data.history.idatahandler - WARNING - No history for STORJ/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,783 - freqtrade.data.history.idatahandler - WARNING - No history for MANA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,792 - freqtrade.data.history.idatahandler - WARNING - No history for YFI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,802 - freqtrade.data.history.idatahandler - WARNING - No history for BAL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,812 - freqtrade.data.history.idatahandler - WARNING - No history for BLZ/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,822 - freqtrade.data.history.idatahandler - WARNING - No history for IRIS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,831 - freqtrade.data.history.idatahandler - WARNING - No history for KMD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,841 - freqtrade.data.history.idatahandler - WARNING - No history for JST/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,851 - freqtrade.data.history.idatahandler - WARNING - No history for CRV/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,861 - freqtrade.data.history.idatahandler - WARNING - No history for SAND/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,870 - freqtrade.data.history.idatahandler - WARNING - No history for OCEAN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,880 - freqtrade.data.history.idatahandler - WARNING - No history for NMR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,890 - freqtrade.data.history.idatahandler - WARNING - No history for DOT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,900 - freqtrade.data.history.idatahandler - WARNING - No history for LUNA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,909 - freqtrade.data.history.idatahandler - WARNING - No history for RSR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,919 - freqtrade.data.history.idatahandler - WARNING - No history for PAXG/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,938 - freqtrade.data.history.idatahandler - WARNING - No history for WNXM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,949 - freqtrade.data.history.idatahandler - WARNING - No history for TRB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,959 - freqtrade.data.history.idatahandler - WARNING - No history for SUSHI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,968 - freqtrade.data.history.idatahandler - WARNING - No history for KSM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,978 - freqtrade.data.history.idatahandler - WARNING - No history for EGLD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,988 - freqtrade.data.history.idatahandler - WARNING - No history for DIA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:00,997 - freqtrade.data.history.idatahandler - WARNING - No history for RUNE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,007 - freqtrade.data.history.idatahandler - WARNING - No history for FIO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,017 - freqtrade.data.history.idatahandler - WARNING - No history for UMA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,027 - freqtrade.data.history.idatahandler - WARNING - No history for BEL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,036 - freqtrade.data.history.idatahandler - WARNING - No history for WING/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,046 - freqtrade.data.history.idatahandler - WARNING - No history for UNI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,056 - freqtrade.data.history.idatahandler - WARNING - No history for OXT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,065 - freqtrade.data.history.idatahandler - WARNING - No history for SUN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,075 - freqtrade.data.history.idatahandler - WARNING - No history for AVAX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,085 - freqtrade.data.history.idatahandler - WARNING - No history for FLM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,095 - freqtrade.data.history.idatahandler - WARNING - No history for ORN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,104 - freqtrade.data.history.idatahandler - WARNING - No history for UTK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,114 - freqtrade.data.history.idatahandler - WARNING - No history for XVS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,124 - freqtrade.data.history.idatahandler - WARNING - No history for ALPHA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,134 - freqtrade.data.history.idatahandler - WARNING - No history for AAVE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,143 - freqtrade.data.history.idatahandler - WARNING - No history for NEAR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,153 - freqtrade.data.history.idatahandler - WARNING - No history for FIL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,163 - freqtrade.data.history.idatahandler - WARNING - No history for INJ/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,173 - freqtrade.data.history.idatahandler - WARNING - No history for AUDIO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,182 - freqtrade.data.history.idatahandler - WARNING - No history for CTK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,192 - freqtrade.data.history.idatahandler - WARNING - No history for AKRO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,202 - freqtrade.data.history.idatahandler - WARNING - No history for AXS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,212 - freqtrade.data.history.idatahandler - WARNING - No history for HARD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,221 - freqtrade.data.history.idatahandler - WARNING - No history for STRAX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,231 - freqtrade.data.history.idatahandler - WARNING - No history for UNFI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,241 - freqtrade.data.history.idatahandler - WARNING - No history for ROSE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,251 - freqtrade.data.history.idatahandler - WARNING - No history for AVA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,261 - freqtrade.data.history.idatahandler - WARNING - No history for XEM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,270 - freqtrade.data.history.idatahandler - WARNING - No history for SKL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,280 - freqtrade.data.history.idatahandler - WARNING - No history for GRT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,290 - freqtrade.data.history.idatahandler - WARNING - No history for JUV/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,300 - freqtrade.data.history.idatahandler - WARNING - No history for PSG/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,310 - freqtrade.data.history.idatahandler - WARNING - No history for 1INCH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,319 - freqtrade.data.history.idatahandler - WARNING - No history for REEF/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,329 - freqtrade.data.history.idatahandler - WARNING - No history for OG/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,339 - freqtrade.data.history.idatahandler - WARNING - No history for ATM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,349 - freqtrade.data.history.idatahandler - WARNING - No history for ASR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,359 - freqtrade.data.history.idatahandler - WARNING - No history for CELO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,368 - freqtrade.data.history.idatahandler - WARNING - No history for RIF/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,378 - freqtrade.data.history.idatahandler - WARNING - No history for TRU/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,388 - freqtrade.data.history.idatahandler - WARNING - No history for CKB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,398 - freqtrade.data.history.idatahandler - WARNING - No history for TWT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,408 - freqtrade.data.history.idatahandler - WARNING - No history for FIRO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,418 - freqtrade.data.history.idatahandler - WARNING - No history for LIT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,427 - freqtrade.data.history.idatahandler - WARNING - No history for SFP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,437 - freqtrade.data.history.idatahandler - WARNING - No history for DODO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,447 - freqtrade.data.history.idatahandler - WARNING - No history for CAKE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,457 - freqtrade.data.history.idatahandler - WARNING - No history for ACM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,466 - freqtrade.data.history.idatahandler - WARNING - No history for BADGER/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,476 - freqtrade.data.history.idatahandler - WARNING - No history for FIS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,486 - freqtrade.data.history.idatahandler - WARNING - No history for OM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,496 - freqtrade.data.history.idatahandler - WARNING - No history for POND/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,506 - freqtrade.data.history.idatahandler - WARNING - No history for DEGO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,515 - freqtrade.data.history.idatahandler - WARNING - No history for ALICE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,525 - freqtrade.data.history.idatahandler - WARNING - No history for LINA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,535 - freqtrade.data.history.idatahandler - WARNING - No history for PERP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,545 - freqtrade.data.history.idatahandler - WARNING - No history for SUPER/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,555 - freqtrade.data.history.idatahandler - WARNING - No history for CFX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,564 - freqtrade.data.history.idatahandler - WARNING - No history for TKO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,574 - freqtrade.data.history.idatahandler - WARNING - No history for PUNDIX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,584 - freqtrade.data.history.idatahandler - WARNING - No history for TLM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,594 - freqtrade.data.history.idatahandler - WARNING - No history for BAR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,604 - freqtrade.data.history.idatahandler - WARNING - No history for FORTH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,613 - freqtrade.data.history.idatahandler - WARNING - No history for BAKE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,623 - freqtrade.data.history.idatahandler - WARNING - No history for BURGER/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,633 - freqtrade.data.history.idatahandler - WARNING - No history for SLP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,643 - freqtrade.data.history.idatahandler - WARNING - No history for SHIB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,653 - freqtrade.data.history.idatahandler - WARNING - No history for ICP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,662 - freqtrade.data.history.idatahandler - WARNING - No history for AR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,672 - freqtrade.data.history.idatahandler - WARNING - No history for POLS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,682 - freqtrade.data.history.idatahandler - WARNING - No history for MDX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,692 - freqtrade.data.history.idatahandler - WARNING - No history for MASK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,702 - freqtrade.data.history.idatahandler - WARNING - No history for LPT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,711 - freqtrade.data.history.idatahandler - WARNING - No history for XVG/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,721 - freqtrade.data.history.idatahandler - WARNING - No history for ATA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,731 - freqtrade.data.history.idatahandler - WARNING - No history for GTC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,741 - freqtrade.data.history.idatahandler - WARNING - No history for ERN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,751 - freqtrade.data.history.idatahandler - WARNING - No history for KLAY/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,761 - freqtrade.data.history.idatahandler - WARNING - No history for PHA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,770 - freqtrade.data.history.idatahandler - WARNING - No history for BOND/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,780 - freqtrade.data.history.idatahandler - WARNING - No history for MLN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,790 - freqtrade.data.history.idatahandler - WARNING - No history for DEXE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,800 - freqtrade.data.history.idatahandler - WARNING - No history for C98/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,810 - freqtrade.data.history.idatahandler - WARNING - No history for CLV/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,819 - freqtrade.data.history.idatahandler - WARNING - No history for QNT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,829 - freqtrade.data.history.idatahandler - WARNING - No history for FLOW/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,839 - freqtrade.data.history.idatahandler - WARNING - No history for MINA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,849 - freqtrade.data.history.idatahandler - WARNING - No history for RAY/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,859 - freqtrade.data.history.idatahandler - WARNING - No history for FARM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,869 - freqtrade.data.history.idatahandler - WARNING - No history for ALPACA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,878 - freqtrade.data.history.idatahandler - WARNING - No history for QUICK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,888 - freqtrade.data.history.idatahandler - WARNING - No history for MBOX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,898 - freqtrade.data.history.idatahandler - WARNING - No history for FOR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,908 - freqtrade.data.history.idatahandler - WARNING - No history for REQ/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,918 - freqtrade.data.history.idatahandler - WARNING - No history for GHST/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,927 - freqtrade.data.history.idatahandler - WARNING - No history for WAXP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,937 - freqtrade.data.history.idatahandler - WARNING - No history for GNO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,947 - freqtrade.data.history.idatahandler - WARNING - No history for XEC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,957 - freqtrade.data.history.idatahandler - WARNING - No history for ELF/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,966 - freqtrade.data.history.idatahandler - WARNING - No history for DYDX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,976 - freqtrade.data.history.idatahandler - WARNING - No history for IDEX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,986 - freqtrade.data.history.idatahandler - WARNING - No history for VIDT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:01,996 - freqtrade.data.history.idatahandler - WARNING - No history for USDP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,005 - freqtrade.data.history.idatahandler - WARNING - No history for GALA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,015 - freqtrade.data.history.idatahandler - WARNING - No history for ILV/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,025 - freqtrade.data.history.idatahandler - WARNING - No history for YGG/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,035 - freqtrade.data.history.idatahandler - WARNING - No history for SYS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,045 - freqtrade.data.history.idatahandler - WARNING - No history for DF/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,054 - freqtrade.data.history.idatahandler - WARNING - No history for FIDA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,064 - freqtrade.data.history.idatahandler - WARNING - No history for FRONT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,074 - freqtrade.data.history.idatahandler - WARNING - No history for CVP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,084 - freqtrade.data.history.idatahandler - WARNING - No history for AGLD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,093 - freqtrade.data.history.idatahandler - WARNING - No history for RAD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,103 - freqtrade.data.history.idatahandler - WARNING - No history for BETA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,113 - freqtrade.data.history.idatahandler - WARNING - No history for RARE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,123 - freqtrade.data.history.idatahandler - WARNING - No history for LAZIO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,132 - freqtrade.data.history.idatahandler - WARNING - No history for CHESS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,142 - freqtrade.data.history.idatahandler - WARNING - No history for ADX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,152 - freqtrade.data.history.idatahandler - WARNING - No history for AUCTION/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,162 - freqtrade.data.history.idatahandler - WARNING - No history for DAR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,171 - freqtrade.data.history.idatahandler - WARNING - No history for BNX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,181 - freqtrade.data.history.idatahandler - WARNING - No history for MOVR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,191 - freqtrade.data.history.idatahandler - WARNING - No history for CITY/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,201 - freqtrade.data.history.idatahandler - WARNING - No history for ENS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,211 - freqtrade.data.history.idatahandler - WARNING - No history for KP3R/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,220 - freqtrade.data.history.idatahandler - WARNING - No history for QI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,230 - freqtrade.data.history.idatahandler - WARNING - No history for PORTO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,240 - freqtrade.data.history.idatahandler - WARNING - No history for POWR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,250 - freqtrade.data.history.idatahandler - WARNING - No history for VGX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,259 - freqtrade.data.history.idatahandler - WARNING - No history for JASMY/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,269 - freqtrade.data.history.idatahandler - WARNING - No history for AMP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,279 - freqtrade.data.history.idatahandler - WARNING - No history for PYR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,289 - freqtrade.data.history.idatahandler - WARNING - No history for RNDR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,298 - freqtrade.data.history.idatahandler - WARNING - No history for ALCX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,308 - freqtrade.data.history.idatahandler - WARNING - No history for SANTOS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,318 - freqtrade.data.history.idatahandler - WARNING - No history for BICO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,328 - freqtrade.data.history.idatahandler - WARNING - No history for FLUX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,337 - freqtrade.data.history.idatahandler - WARNING - No history for FXS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,347 - freqtrade.data.history.idatahandler - WARNING - No history for VOXEL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,357 - freqtrade.data.history.idatahandler - WARNING - No history for HIGH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,367 - freqtrade.data.history.idatahandler - WARNING - No history for CVX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,376 - freqtrade.data.history.idatahandler - WARNING - No history for PEOPLE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,386 - freqtrade.data.history.idatahandler - WARNING - No history for OOKI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,396 - freqtrade.data.history.idatahandler - WARNING - No history for SPELL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,406 - freqtrade.data.history.idatahandler - WARNING - No history for JOE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,415 - freqtrade.data.history.idatahandler - WARNING - No history for ACH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,425 - freqtrade.data.history.idatahandler - WARNING - No history for IMX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,435 - freqtrade.data.history.idatahandler - WARNING - No history for GLMR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,445 - freqtrade.data.history.idatahandler - WARNING - No history for LOKA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,454 - freqtrade.data.history.idatahandler - WARNING - No history for SCRT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,464 - freqtrade.data.history.idatahandler - WARNING - No history for API3/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,474 - freqtrade.data.history.idatahandler - WARNING - No history for BTTC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,484 - freqtrade.data.history.idatahandler - WARNING - No history for ACA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,493 - freqtrade.data.history.idatahandler - WARNING - No history for XNO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,503 - freqtrade.data.history.idatahandler - WARNING - No history for WOO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,513 - freqtrade.data.history.idatahandler - WARNING - No history for ALPINE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,523 - freqtrade.data.history.idatahandler - WARNING - No history for T/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,532 - freqtrade.data.history.idatahandler - WARNING - No history for ASTR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,542 - freqtrade.data.history.idatahandler - WARNING - No history for GMT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,552 - freqtrade.data.history.idatahandler - WARNING - No history for KDA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,562 - freqtrade.data.history.idatahandler - WARNING - No history for APE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,571 - freqtrade.data.history.idatahandler - WARNING - No history for BSW/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,581 - freqtrade.data.history.idatahandler - WARNING - No history for BIFI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,591 - freqtrade.data.history.idatahandler - WARNING - No history for STEEM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,601 - freqtrade.data.history.idatahandler - WARNING - No history for MOB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,610 - freqtrade.data.history.idatahandler - WARNING - No history for NEXO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,620 - freqtrade.data.history.idatahandler - WARNING - No history for REI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,630 - freqtrade.data.history.idatahandler - WARNING - No history for GAL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,640 - freqtrade.data.history.idatahandler - WARNING - No history for LDO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,649 - freqtrade.data.history.idatahandler - WARNING - No history for EPX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,659 - freqtrade.data.history.idatahandler - WARNING - No history for OP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,669 - freqtrade.data.history.idatahandler - WARNING - No history for LEVER/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,679 - freqtrade.data.history.idatahandler - WARNING - No history for STG/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,688 - freqtrade.data.history.idatahandler - WARNING - No history for LUNC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,698 - freqtrade.data.history.idatahandler - WARNING - No history for GMX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,708 - freqtrade.data.history.idatahandler - WARNING - No history for POLYX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,718 - freqtrade.data.history.idatahandler - WARNING - No history for APT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,728 - freqtrade.data.history.idatahandler - WARNING - No history for OSMO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,737 - freqtrade.data.history.idatahandler - WARNING - No history for HFT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,747 - freqtrade.data.history.idatahandler - WARNING - No history for PHB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,756 - freqtrade.data.history.idatahandler - WARNING - No history for HOOK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,766 - freqtrade.data.history.idatahandler - WARNING - No history for MAGIC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,775 - freqtrade.data.history.idatahandler - WARNING - No history for HIFI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,785 - freqtrade.data.history.idatahandler - WARNING - No history for RPL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,794 - freqtrade.data.history.idatahandler - WARNING - No history for PROS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,804 - freqtrade.data.history.idatahandler - WARNING - No history for AGIX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,813 - freqtrade.data.history.idatahandler - WARNING - No history for GNS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,823 - freqtrade.data.history.idatahandler - WARNING - No history for SYN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,832 - freqtrade.data.history.idatahandler - WARNING - No history for VIB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,842 - freqtrade.data.history.idatahandler - WARNING - No history for SSV/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,852 - freqtrade.data.history.idatahandler - WARNING - No history for LQTY/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,861 - freqtrade.data.history.idatahandler - WARNING - No history for AMB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,871 - freqtrade.data.history.idatahandler - WARNING - No history for USTC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,880 - freqtrade.data.history.idatahandler - WARNING - No history for GAS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,890 - freqtrade.data.history.idatahandler - WARNING - No history for GLM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,899 - freqtrade.data.history.idatahandler - WARNING - No history for PROM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,909 - freqtrade.data.history.idatahandler - WARNING - No history for QKC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,918 - freqtrade.data.history.idatahandler - WARNING - No history for UFT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,928 - freqtrade.data.history.idatahandler - WARNING - No history for ID/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,938 - freqtrade.data.history.idatahandler - WARNING - No history for ARB/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,947 - freqtrade.data.history.idatahandler - WARNING - No history for LOOM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,957 - freqtrade.data.history.idatahandler - WARNING - No history for OAX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,966 - freqtrade.data.history.idatahandler - WARNING - No history for RDNT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,976 - freqtrade.data.history.idatahandler - WARNING - No history for WBTC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,985 - freqtrade.data.history.idatahandler - WARNING - No history for EDU/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:02,995 - freqtrade.data.history.idatahandler - WARNING - No history for SUI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,004 - freqtrade.data.history.idatahandler - WARNING - No history for AERGO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,014 - freqtrade.data.history.idatahandler - WARNING - No history for PEPE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,023 - freqtrade.data.history.idatahandler - WARNING - No history for FLOKI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,033 - freqtrade.data.history.idatahandler - WARNING - No history for AST/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,042 - freqtrade.data.history.idatahandler - WARNING - No history for SNT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,052 - freqtrade.data.history.idatahandler - WARNING - No history for COMBO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,062 - freqtrade.data.history.idatahandler - WARNING - No history for MAV/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,071 - freqtrade.data.history.idatahandler - WARNING - No history for PENDLE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,081 - freqtrade.data.history.idatahandler - WARNING - No history for ARKM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,090 - freqtrade.data.history.idatahandler - WARNING - No history for WBETH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,100 - freqtrade.data.history.idatahandler - WARNING - No history for WLD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,109 - freqtrade.data.history.idatahandler - WARNING - No history for FDUSD/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,119 - freqtrade.data.history.idatahandler - WARNING - No history for SEI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,128 - freqtrade.data.history.idatahandler - WARNING - No history for CYBER/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,138 - freqtrade.data.history.idatahandler - WARNING - No history for ARK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,147 - freqtrade.data.history.idatahandler - WARNING - No history for CREAM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,157 - freqtrade.data.history.idatahandler - WARNING - No history for GFT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,167 - freqtrade.data.history.idatahandler - WARNING - No history for IQ/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,176 - freqtrade.data.history.idatahandler - WARNING - No history for NTRN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,186 - freqtrade.data.history.idatahandler - WARNING - No history for TIA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,195 - freqtrade.data.history.idatahandler - WARNING - No history for MEME/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,205 - freqtrade.data.history.idatahandler - WARNING - No history for ORDI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,214 - freqtrade.data.history.idatahandler - WARNING - No history for BEAMX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,224 - freqtrade.data.history.idatahandler - WARNING - No history for PIVX/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,233 - freqtrade.data.history.idatahandler - WARNING - No history for VIC/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,243 - freqtrade.data.history.idatahandler - WARNING - No history for BLUR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,252 - freqtrade.data.history.idatahandler - WARNING - No history for VANRY/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,262 - freqtrade.data.history.idatahandler - WARNING - No history for AEUR/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,271 - freqtrade.data.history.idatahandler - WARNING - No history for JTO/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,281 - freqtrade.data.history.idatahandler - WARNING - No history for 1000SATS/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,290 - freqtrade.data.history.idatahandler - WARNING - No history for BONK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,300 - freqtrade.data.history.idatahandler - WARNING - No history for ACE/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,310 - freqtrade.data.history.idatahandler - WARNING - No history for NFP/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,319 - freqtrade.data.history.idatahandler - WARNING - No history for AI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,329 - freqtrade.data.history.idatahandler - WARNING - No history for XAI/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,338 - freqtrade.data.history.idatahandler - WARNING - No history for MANTA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,348 - freqtrade.data.history.idatahandler - WARNING - No history for ALT/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,357 - freqtrade.data.history.idatahandler - WARNING - No history for PYTH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,367 - freqtrade.data.history.idatahandler - WARNING - No history for RONIN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,376 - freqtrade.data.history.idatahandler - WARNING - No history for DYM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,386 - freqtrade.data.history.idatahandler - WARNING - No history for PIXEL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,395 - freqtrade.data.history.idatahandler - WARNING - No history for STRK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,396 - freqtrade.data.history.idatahandler - WARNING - No history for PORTAL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,396 - freqtrade.data.history.idatahandler - WARNING - No history for PDA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,397 - freqtrade.data.history.idatahandler - WARNING - No history for AXL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,397 - freqtrade.data.history.idatahandler - WARNING - No history for WIF/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 16:04:03,408 - freqtrade.optimize.backtesting - INFO - Loading data from 2020-01-01 00:00:00 up to 2020-01-31 00:00:00 (30 days).
+2024-03-08 16:04:03,408 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2024-03-08 16:04:03,410 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy lambo
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): base_nb_candles_buy = 12
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_adx = 30
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_ema_cofi = 0.97
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_ewo_high = 3.55
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_fastd = 20
+2024-03-08 16:04:03,410 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_fastk = 20
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): ewo_high = 3.001
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): ewo_low = -10.289
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): low_offset = 0.987
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): rsi_buy = 58
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): base_nb_candles_sell = 22
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): high_offset = 1.014
+2024-03-08 16:04:03,411 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2024-03-08 16:05:21,955 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2020-01-01 00:00:00 up to 2020-01-31 00:00:00 (30 days).
+2024-03-08 16:05:22,596 - root - INFO - Doji detected on ONT/USDT
+2024-03-08 16:05:23,478 - root - INFO - Doji detected on IOST/USDT
+2024-03-08 16:05:23,670 - root - INFO - Doji detected on THETA/USDT
+2024-03-08 16:05:23,858 - root - INFO - Doji detected on TFUEL/USDT
+2024-03-08 16:05:23,875 - root - INFO - Doji detected on ONE/USDT
+2024-03-08 16:05:23,891 - root - INFO - Doji detected on FTM/USDT
+2024-03-08 16:05:24,022 - root - INFO - Doji detected on DUSK/USDT
+2024-03-08 16:05:24,266 - root - INFO - Doji detected on DENT/USDT
+2024-03-08 16:05:24,282 - root - INFO - Doji detected on KEY/USDT
+2024-03-08 16:05:24,301 - root - INFO - Doji detected on DOCK/USDT
+2024-03-08 16:05:24,374 - root - INFO - Doji detected on FUN/USDT
+2024-03-08 16:05:24,393 - root - INFO - Doji detected on CVC/USDT
+2024-03-08 16:05:24,410 - root - INFO - Doji detected on CHZ/USDT
+2024-03-08 16:05:24,427 - root - INFO - Doji detected on BAND/USDT
+2024-03-08 16:05:24,502 - root - INFO - Doji detected on REN/USDT
+2024-03-08 16:05:24,518 - root - INFO - Doji detected on RVN/USDT
+2024-03-08 16:05:24,538 - root - INFO - Doji detected on HBAR/USDT
+2024-03-08 16:05:24,613 - root - INFO - Doji detected on STX/USDT
+2024-03-08 16:05:24,798 - root - INFO - Doji detected on RLC/USDT
+2024-03-08 16:05:24,815 - root - INFO - Doji detected on CTXC/USDT
+2024-03-08 16:05:24,834 - root - INFO - Doji detected on BCH/USDT
+2024-03-08 16:05:24,907 - root - INFO - Doji detected on VITE/USDT
+2024-03-08 16:05:24,981 - root - INFO - Doji detected on EUR/USDT
+2024-03-08 16:05:25,045 - root - INFO - Doji detected on DREP/USDT
+2024-03-08 16:07:05,663 - freqtrade.misc - INFO - dumping json to "/home/alca/freqtrade/user_data/backtest_results/backtest-result-2024-03-08_16-07-05.meta.json"
+2024-03-08 16:07:05,663 - freqtrade.misc - INFO - dumping json to "/home/alca/freqtrade/user_data/backtest_results/backtest-result-2024-03-08_16-07-05.json"
+2024-03-08 16:07:05,676 - freqtrade.misc - INFO - dumping json to "/home/alca/freqtrade/user_data/backtest_results/.last_result.json"
+Result for strategy lambo
+============================================================== BACKTESTING REPORT =============================================================
+|       Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|------------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+|   NKN/USDT |        34 |           1.02 |          34.80 |            38.820 |           3.88 |          12:03:00 |    34     0     0   100 |
+|  TROY/USDT |        35 |           0.82 |          28.55 |            25.976 |           2.60 |           9:26:00 |    34     0     1  97.1 |
+|  DASH/USDT |         4 |           2.00 |           8.01 |            20.989 |           2.10 |           9:58:00 |     4     0     0   100 |
+|   TRX/USDT |        38 |           1.23 |          46.63 |            20.388 |           2.04 |          13:58:00 |    38     0     0   100 |
+|   OGN/USDT |        34 |           1.20 |          40.96 |            16.126 |           1.61 |           6:01:00 |    34     0     0   100 |
+| MATIC/USDT |        17 |           1.45 |          24.67 |            15.887 |           1.59 |   1 day, 10:41:00 |    17     0     0   100 |
+|   ZEC/USDT |         7 |           2.74 |          19.17 |            14.851 |           1.49 |           7:29:00 |     7     0     0   100 |
+|   FET/USDT |        26 |           1.13 |          29.26 |            13.092 |           1.31 |          16:49:00 |    25     0     1  96.2 |
+|   EOS/USDT |        13 |           1.40 |          18.18 |            12.709 |           1.27 |          15:36:00 |    13     0     0   100 |
+|   ETC/USDT |        22 |           1.12 |          24.73 |            12.429 |           1.24 |           8:14:00 |    22     0     0   100 |
+|  LINK/USDT |        18 |           1.16 |          20.97 |            10.458 |           1.05 |           8:45:00 |    18     0     0   100 |
+|   ENJ/USDT |        28 |           1.11 |          30.97 |             9.998 |           1.00 |           9:11:00 |    28     0     0   100 |
+|   XRP/USDT |        16 |           0.91 |          14.62 |             8.948 |           0.89 |          16:52:00 |    16     0     0   100 |
+|  ARPA/USDT |        19 |           1.27 |          24.11 |             8.946 |           0.89 |    1 day, 1:06:00 |    18     0     1  94.7 |
+|   COS/USDT |        29 |           0.82 |          23.90 |             8.739 |           0.87 |          17:55:00 |    28     0     1  96.6 |
+|  ATOM/USDT |        13 |           1.50 |          19.53 |             7.060 |           0.71 |          15:13:00 |    13     0     0   100 |
+|   XTZ/USDT |        14 |           1.33 |          18.58 |             6.564 |           0.66 |          17:40:00 |    14     0     0   100 |
+|   NEO/USDT |        15 |           0.91 |          13.65 |             6.293 |           0.63 |           9:51:00 |    15     0     0   100 |
+|  QTUM/USDT |        19 |           1.18 |          22.47 |             6.151 |           0.62 |           9:33:00 |    19     0     0   100 |
+|   ADA/USDT |        16 |           0.93 |          14.83 |             5.396 |           0.54 |          11:04:00 |    16     0     0   100 |
+| WAVES/USDT |        26 |           0.79 |          20.54 |             5.138 |           0.51 |          12:51:00 |    25     0     1  96.2 |
+|   MTL/USDT |        15 |           1.22 |          18.37 |             4.594 |           0.46 |          11:11:00 |    15     0     0   100 |
+|  IOTA/USDT |        15 |           1.23 |          18.43 |             4.594 |           0.46 |          10:30:00 |    15     0     0   100 |
+|   LTC/USDT |        13 |           1.27 |          16.56 |             4.464 |           0.45 |          17:07:00 |    13     0     0   100 |
+|  NULS/USDT |         8 |           1.06 |           8.50 |             3.889 |           0.39 |           8:52:00 |     8     0     0   100 |
+|   ICX/USDT |        14 |           1.10 |          15.42 |             3.858 |           0.39 |          12:36:00 |    14     0     0   100 |
+|   WAN/USDT |        16 |           0.93 |          14.82 |             3.696 |           0.37 |           6:57:00 |    16     0     0   100 |
+|   XLM/USDT |        14 |           0.98 |          13.72 |             3.431 |           0.34 |           5:06:00 |    14     0     0   100 |
+|   ZRX/USDT |        12 |           0.90 |          10.79 |             2.940 |           0.29 |           9:12:00 |    12     0     0   100 |
+|   BAT/USDT |        12 |           0.96 |          11.58 |             2.886 |           0.29 |          15:08:00 |    12     0     0   100 |
+|   FTT/USDT |        13 |           0.84 |          10.88 |             2.722 |           0.27 |          21:26:00 |    13     0     0   100 |
+|  ALGO/USDT |        11 |           0.98 |          10.80 |             2.688 |           0.27 |           7:13:00 |    11     0     0   100 |
+|  KAVA/USDT |        11 |           0.78 |           8.63 |             2.154 |           0.22 |          21:05:00 |    10     0     1  90.9 |
+|   OMG/USDT |        10 |           0.77 |           7.75 |             1.936 |           0.19 |           7:30:00 |    10     0     0   100 |
+|   ONG/USDT |         4 |           0.96 |           3.85 |             0.963 |           0.10 |           1:32:00 |     4     0     0   100 |
+|   ETH/USDT |         4 |           0.70 |           2.81 |             0.703 |           0.07 |          13:30:00 |     4     0     0   100 |
+|   BTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   ONT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   HOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   ZIL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  IOST/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  CELR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+| THETA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+| TFUEL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   ONE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   FTM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DOGE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DUSK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  ANKR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   WIN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DENT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   KEY/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DOCK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   FUN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   CVC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   CHZ/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  BAND/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   REN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   RVN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  HBAR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   STX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  IOTX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   RLC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  CTXC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   BCH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  VITE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   EUR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  DREP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|  USDC/USDT |         1 |          -0.05 |          -0.05 |            -0.013 |          -0.00 | 23 days, 23:50:00 |     0     0     1     0 |
+|  TUSD/USDT |         1 |          -0.07 |          -0.07 |            -0.018 |          -0.00 | 23 days, 19:35:00 |     0     0     1     0 |
+|   VET/USDT |        18 |           0.76 |          13.66 |            -8.533 |          -0.85 |    1 day, 7:36:00 |    17     0     1  94.4 |
+|      TOTAL |       635 |           1.08 |         685.57 |           311.912 |          31.19 |          15:12:00 |   626     0     9  98.6 |
+=========================================================== LEFT OPEN TRADES REPORT ===========================================================
+|       Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|------------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+| MATIC/USDT |         1 |           0.02 |           0.02 |             0.004 |           0.00 |           0:10:00 |     1     0     0   100 |
+|  USDC/USDT |         1 |          -0.05 |          -0.05 |            -0.013 |          -0.00 | 23 days, 23:50:00 |     0     0     1     0 |
+|  TUSD/USDT |         1 |          -0.07 |          -0.07 |            -0.018 |          -0.00 | 23 days, 19:35:00 |     0     0     1     0 |
+|   FET/USDT |         1 |          -0.41 |          -0.41 |            -0.102 |          -0.01 |           2:50:00 |     0     0     1     0 |
+|  KAVA/USDT |         1 |          -0.56 |          -0.56 |            -0.140 |          -0.01 |           6:10:00 |     0     0     1     0 |
+| WAVES/USDT |         1 |          -1.13 |          -1.13 |            -0.283 |          -0.03 |    1 day, 3:35:00 |     0     0     1     0 |
+|  ARPA/USDT |         1 |          -1.77 |          -1.77 |            -0.443 |          -0.04 |          11:05:00 |     0     0     1     0 |
+|  TROY/USDT |         1 |          -3.84 |          -3.84 |            -0.960 |          -0.10 |           9:15:00 |     0     0     1     0 |
+|   COS/USDT |         1 |          -6.28 |          -6.28 |            -2.804 |          -0.28 |  2 days, 11:50:00 |     0     0     1     0 |
+|   VET/USDT |         1 |          -3.75 |          -3.75 |           -16.591 |          -1.66 |  13 days, 3:25:00 |     0     0     1     0 |
+|      TOTAL |        10 |          -1.78 |         -17.84 |           -21.351 |          -2.14 |  6 days, 13:58:00 |     1     0     9  10.0 |
+========================================================================= ENTER TAG STATS ==========================================================================
+|                              TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |     Avg Duration |   Win  Draw  Loss  Win% |
+|----------------------------------+-----------+----------------+----------------+-------------------+----------------+------------------+-------------------------|
+| sr_buy_midema_dbs_sr_buyema_dbs_ |       607 |           1.06 |         641.71 |           260.941 |          26.09 |         13:38:00 |   600     0     7  98.8 |
+|                      buy1eworsi_ |        14 |           1.95 |          27.35 |            38.392 |           3.84 |          4:01:00 |    14     0     0   100 |
+|           ema_dbs_sr_buyema_dbs_ |        10 |           1.05 |          10.53 |            11.083 |           1.11 | 5 days, 11:32:00 |     8     0     2  80.0 |
+|      buy1eworsi_ema_dbs_ema_dbs_ |         2 |           1.99 |           3.98 |             0.997 |           0.10 |          4:35:00 |     2     0     0   100 |
+|      buy1eworsi_sr_buy_midsr_buy |         2 |           1.00 |           2.00 |             0.499 |           0.05 |          2:10:00 |     2     0     0   100 |
+|                            TOTAL |       635 |           1.08 |         685.57 |           311.912 |          31.19 |         15:12:00 |   626     0     9  98.6 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|                psl |     341 |    341     0     0   100 |           1.24 |         423.63 |           187.59  |          10.59 |
+| trailing_stop_loss |     213 |    213     0     0   100 |           1.03 |         220.14 |           100.496 |           5.5  |
+|     fib_618_sma_50 |      47 |     47     0     0   100 |           0.76 |          35.78 |            20.231 |           0.89 |
+|                roi |      24 |     24     0     0   100 |           0.99 |          23.87 |            24.946 |           0.6  |
+|         force_exit |      10 |      1     0     9  10.0 |          -1.78 |         -17.84 |           -21.351 |          -0.45 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2020-01-01 00:00:00 |
+| Backtesting to              | 2020-01-31 00:00:00 |
+| Max open trades             | 40                  |
+|                             |                     |
+| Total/Daily Avg Trades      | 635 / 21.17         |
+| Starting balance            | 1000 USDT           |
+| Final balance               | 1311.912 USDT       |
+| Absolute profit             | 311.912 USDT        |
+| Total profit %              | 31.19%              |
+| CAGR %                      | 2619.62%            |
+| Sortino                     | 38.98               |
+| Sharpe                      | 122.29              |
+| Calmar                      | 1240.41             |
+| Profit factor               | 15.61               |
+| Expectancy (Ratio)          | 0.49 (0.21)         |
+| Trades per day              | 21.17               |
+| Avg. daily profit %         | 1.04%               |
+| Avg. stake amount           | 45.232 USDT         |
+| Total trade volume          | 28722.128 USDT      |
+|                             |                     |
+| Best Pair                   | TRX/USDT 46.63%     |
+| Worst Pair                  | TUSD/USDT -0.07%    |
+| Best trade                  | NKN/USDT 9.00%      |
+| Worst trade                 | COS/USDT -6.28%     |
+| Best day                    | 46.439 USDT         |
+| Worst day                   | -21.351 USDT        |
+| Days win/draw/lose          | 28 / 1 / 1          |
+| Avg. Duration Winners       | 12:54:00            |
+| Avg. Duration Loser         | 7 days, 7:31:00     |
+| Max Consecutive Wins / Loss | 625 / 5             |
+| Rejected Entry signals      | 0                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 1000.173 USDT       |
+| Max balance                 | 1333.263 USDT       |
+| Max % of account underwater | 1.60%               |
+| Absolute Drawdown (Account) | 1.60%               |
+| Absolute Drawdown           | 21.351 USDT         |
+| Drawdown high               | 333.263 USDT        |
+| Drawdown low                | 311.912 USDT        |
+| Drawdown Start              | 2020-01-30 23:40:00 |
+| Drawdown End                | 2020-01-31 00:00:00 |
+| Market change               | 25.10%              |
+=====================================================
+
+Backtested 2020-01-01 00:00:00 -> 2020-01-31 00:00:00 | Max open trades : 40
+======================================================================== STRATEGY SUMMARY =======================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |   Avg Duration |   Win  Draw  Loss  Win% |           Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+----------------+-------------------------+--------------------|
+|      lambo |       635 |           1.08 |         685.57 |           311.912 |          31.19 |       15:12:00 |   626     0     9  98.6 | 21.351 USDT  1.60% |
+=================================================================================================================================================================
+
+For more details, please look at the detail tables above

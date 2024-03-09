@@ -1,0 +1,618 @@
+2024-03-08 21:31:09,221 - freqtrade - INFO - freqtrade 2024.2
+2024-03-08 21:31:09,222 - freqtrade.configuration.load_config - INFO - Using config: user_data/config.json ...
+2024-03-08 21:31:09,223 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Parameter -i/--timeframe detected ... Using timeframe: 5m ...
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 40 ...
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20240101-20240131 ...
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/alca/freqtrade/user_data ...
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Using data directory: user_data/data/binance ...
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Overriding timeframe with Command line argument
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Parameter --cache=day detected ...
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Using "hdf5" to store OHLCV data.
+2024-03-08 21:31:09,223 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20240101-20240131
+2024-03-08 21:31:09,223 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-08 21:31:09,231 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-08 21:31:09,231 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-08 21:31:09,231 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-08 21:31:09,233 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2024-03-08 21:31:09,233 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-08 21:31:09,233 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.51
+2024-03-08 21:31:09,248 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-03-08 21:31:14,377 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2024-03-08 21:31:14,436 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy lambo from '/home/alca/freqtrade/user_data/strategies/lambo.py'...
+2024-03-08 21:31:14,436 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 25.
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 40.
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.5, '120': 0.3, '240': 0.1, '360': 0.07, '480': 0.05, '720': 0.03, '960': 0.01, '1440': 0.005, '2880': 0.003, '4320': 0.001, '5760': 0.0}
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -1
+2024-03-08 21:31:14,436 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.003
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.008
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'market', 'exit': 'market', 'emergency_exit': 'market', 'force_entry': 'market', 'force_exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'gtc', 'exit': 'gtc'}
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 25
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: [{'method': 'CooldownPeriod', 'stop_duration_candles': 1}, {'method': 'MaxDrawdown', 'lookback_period_candles': 48, 'trade_limit': 20, 'stop_duration_candles': 4, 'max_allowed_drawdown': 0.2}, {'method': 'StoplossGuard', 'lookback_period_candles': 24, 'trade_limit': 4, 'stop_duration_candles': 2, 'only_per_pair': False}, {'method': 'LowProfitPairs', 'lookback_period_candles': 6, 'trade_limit': 2, 'stop_duration_candles': 60, 'required_profit': 0.02}, {'method': 'LowProfitPairs', 'lookback_period_candles': 24, 'trade_limit': 4, 'stop_duration_candles': 2, 'required_profit': 0.01}]
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: True
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-08 21:31:14,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 40
+2024-03-08 21:31:14,437 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-08 21:31:14,440 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/home/alca/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2024-03-08 21:31:25,235 - freqtrade.data.history.idatahandler - WARNING - AI/USDT, spot, 5m, data starts at 2024-01-04 10:00:00
+2024-03-08 21:31:25,260 - freqtrade.data.history.idatahandler - WARNING - XAI/USDT, spot, 5m, data starts at 2024-01-09 10:00:00
+2024-03-08 21:31:25,282 - freqtrade.data.history.idatahandler - WARNING - MANTA/USDT, spot, 5m, data starts at 2024-01-18 10:00:00
+2024-03-08 21:31:25,303 - freqtrade.data.history.idatahandler - WARNING - ALT/USDT, spot, 5m, data starts at 2024-01-25 10:00:00
+2024-03-08 21:31:25,320 - freqtrade.data.history.idatahandler - WARNING - No history for PYTH/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,330 - freqtrade.data.history.idatahandler - WARNING - No history for RONIN/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,340 - freqtrade.data.history.idatahandler - WARNING - No history for DYM/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,349 - freqtrade.data.history.idatahandler - WARNING - No history for PIXEL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,359 - freqtrade.data.history.idatahandler - WARNING - No history for STRK/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,359 - freqtrade.data.history.idatahandler - WARNING - No history for PORTAL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,360 - freqtrade.data.history.idatahandler - WARNING - No history for PDA/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,360 - freqtrade.data.history.idatahandler - WARNING - No history for AXL/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,361 - freqtrade.data.history.idatahandler - WARNING - No history for WIF/USDT, spot, 5m found. Use `freqtrade download-data` to download the data
+2024-03-08 21:31:25,422 - freqtrade.optimize.backtesting - INFO - Loading data from 2024-01-01 00:00:00 up to 2024-01-31 00:00:00 (30 days).
+2024-03-08 21:31:25,422 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2024-03-08 21:31:25,426 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy lambo
+2024-03-08 21:31:25,426 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2024-03-08 21:31:25,426 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): base_nb_candles_buy = 12
+2024-03-08 21:31:25,426 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_adx = 30
+2024-03-08 21:31:25,426 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_ema_cofi = 0.97
+2024-03-08 21:31:25,426 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_ewo_high = 3.55
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_fastd = 20
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_fastk = 20
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): ewo_high = 3.001
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): ewo_low = -10.289
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): low_offset = 0.987
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): rsi_buy = 58
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): base_nb_candles_sell = 22
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): high_offset = 1.014
+2024-03-08 21:31:25,427 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2024-03-08 21:38:19,318 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2024-01-01 00:00:00 up to 2024-01-31 00:00:00 (30 days).
+2024-03-08 21:38:20,255 - root - INFO - Doji detected on VET/USDT
+2024-03-08 21:38:20,280 - root - INFO - Doji detected on USDC/USDT
+2024-03-08 21:38:20,361 - root - INFO - Doji detected on WAVES/USDT
+2024-03-08 21:38:20,607 - root - INFO - Doji detected on FET/USDT
+2024-03-08 21:38:20,682 - root - INFO - Doji detected on ZEC/USDT
+2024-03-08 21:38:20,813 - root - INFO - Doji detected on DASH/USDT
+2024-03-08 21:38:21,001 - root - INFO - Doji detected on MATIC/USDT
+2024-03-08 21:38:21,247 - root - INFO - Doji detected on ALGO/USDT
+2024-03-08 21:38:21,320 - root - INFO - Doji detected on DUSK/USDT
+2024-03-08 21:38:21,397 - root - INFO - Doji detected on WIN/USDT
+2024-03-08 21:38:21,528 - root - INFO - Doji detected on DENT/USDT
+2024-03-08 21:38:22,115 - root - INFO - Doji detected on HBAR/USDT
+2024-03-08 21:38:22,132 - root - INFO - Doji detected on NKN/USDT
+2024-03-08 21:38:22,265 - root - INFO - Doji detected on ARPA/USDT
+2024-03-08 21:38:22,517 - root - INFO - Doji detected on TROY/USDT
+2024-03-08 21:38:22,648 - root - INFO - Doji detected on EUR/USDT
+2024-03-08 21:38:23,410 - root - INFO - Doji detected on CHR/USDT
+2024-03-08 21:38:23,769 - root - INFO - Doji detected on COMP/USDT
+2024-03-08 21:38:23,905 - root - INFO - Doji detected on SNX/USDT
+2024-03-08 21:38:24,735 - root - INFO - Doji detected on SAND/USDT
+2024-03-08 21:38:24,925 - root - INFO - Doji detected on LUNA/USDT
+2024-03-08 21:38:24,942 - root - INFO - Doji detected on RSR/USDT
+2024-03-08 21:38:25,081 - root - INFO - Doji detected on TRB/USDT
+2024-03-08 21:38:25,562 - root - INFO - Doji detected on WING/USDT
+2024-03-08 21:38:25,980 - root - INFO - Doji detected on XVS/USDT
+2024-03-08 21:38:26,000 - root - INFO - Doji detected on ALPHA/USDT
+2024-03-08 21:38:26,369 - root - INFO - Doji detected on AKRO/USDT
+2024-03-08 21:38:26,784 - root - INFO - Doji detected on SKL/USDT
+2024-03-08 21:38:26,860 - root - INFO - Doji detected on JUV/USDT
+2024-03-08 21:38:27,162 - root - INFO - Doji detected on ASR/USDT
+2024-03-08 21:38:27,179 - root - INFO - Doji detected on CELO/USDT
+2024-03-08 21:38:27,195 - root - INFO - Doji detected on RIF/USDT
+2024-03-08 21:38:27,440 - root - INFO - Doji detected on LIT/USDT
+2024-03-08 21:38:27,686 - root - INFO - Doji detected on BADGER/USDT
+2024-03-08 21:38:27,932 - root - INFO - Doji detected on ALICE/USDT
+2024-03-08 21:38:28,290 - root - INFO - Doji detected on TLM/USDT
+2024-03-08 21:38:28,535 - root - INFO - Doji detected on SLP/USDT
+2024-03-08 21:38:28,551 - root - INFO - Doji detected on SHIB/USDT
+2024-03-08 21:38:28,972 - root - INFO - Doji detected on ATA/USDT
+2024-03-08 21:38:29,504 - root - INFO - Doji detected on QNT/USDT
+2024-03-08 21:38:29,523 - root - INFO - Doji detected on FLOW/USDT
+2024-03-08 21:38:29,997 - root - INFO - Doji detected on GHST/USDT
+2024-03-08 21:38:30,014 - root - INFO - Doji detected on WAXP/USDT
+2024-03-08 21:38:30,377 - root - INFO - Doji detected on USDP/USDT
+2024-03-08 21:38:30,394 - root - INFO - Doji detected on GALA/USDT
+2024-03-08 21:38:30,411 - root - INFO - Doji detected on ILV/USDT
+2024-03-08 21:38:30,771 - root - INFO - Doji detected on AGLD/USDT
+2024-03-08 21:38:31,245 - root - INFO - Doji detected on BNX/USDT
+2024-03-08 21:38:31,618 - root - INFO - Doji detected on POWR/USDT
+2024-03-08 21:38:31,808 - root - INFO - Doji detected on PYR/USDT
+2024-03-08 21:38:31,825 - root - INFO - Doji detected on RNDR/USDT
+2024-03-08 21:38:32,079 - root - INFO - Doji detected on FXS/USDT
+2024-03-08 21:38:32,212 - root - INFO - Doji detected on CVX/USDT
+2024-03-08 21:38:32,229 - root - INFO - Doji detected on PEOPLE/USDT
+2024-03-08 21:38:32,361 - root - INFO - Doji detected on JOE/USDT
+2024-03-08 21:38:32,437 - root - INFO - Doji detected on IMX/USDT
+2024-03-08 21:38:32,453 - root - INFO - Doji detected on GLMR/USDT
+2024-03-08 21:38:33,038 - root - INFO - Doji detected on GMT/USDT
+2024-03-08 21:38:33,514 - root - INFO - Doji detected on GAL/USDT
+2024-03-08 21:38:34,331 - root - INFO - Doji detected on HIFI/USDT
+2024-03-08 21:38:34,409 - root - INFO - Doji detected on PROS/USDT
+2024-03-08 21:38:34,714 - root - INFO - Doji detected on LQTY/USDT
+2024-03-08 21:38:35,078 - root - INFO - Doji detected on UFT/USDT
+2024-03-08 21:38:35,095 - root - INFO - Doji detected on ID/USDT
+2024-03-08 21:38:35,282 - root - INFO - Doji detected on RDNT/USDT
+2024-03-08 21:38:36,109 - root - INFO - Doji detected on FDUSD/USDT
+2024-03-08 21:38:36,589 - root - INFO - Doji detected on MEME/USDT
+2024-03-08 21:38:36,666 - root - INFO - Doji detected on BEAMX/USDT
+2024-03-08 21:38:36,743 - root - INFO - Doji detected on VIC/USDT
+2024-03-08 21:38:36,932 - root - INFO - Doji detected on JTO/USDT
+2024-03-08 21:38:37,275 - root - INFO - Doji detected on MANTA/USDT
+2024-03-08 21:40:49,159 - freqtrade.misc - INFO - dumping json to "/home/alca/freqtrade/user_data/backtest_results/backtest-result-2024-03-08_21-40-49.meta.json"
+2024-03-08 21:40:49,159 - freqtrade.misc - INFO - dumping json to "/home/alca/freqtrade/user_data/backtest_results/backtest-result-2024-03-08_21-40-49.json"
+2024-03-08 21:40:49,164 - freqtrade.misc - INFO - dumping json to "/home/alca/freqtrade/user_data/backtest_results/.last_result.json"
+Result for strategy lambo
+=============================================================== BACKTESTING REPORT ===============================================================
+|          Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|---------------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+|     NTRN/USDT |         1 |           4.17 |           4.17 |            14.645 |           1.46 |  2 days, 12:35:00 |     1     0     0   100 |
+|      ARB/USDT |         3 |           3.93 |          11.79 |             2.944 |           0.29 |           8:40:00 |     3     0     0   100 |
+|      MAV/USDT |         4 |           2.13 |           8.52 |             2.583 |           0.26 |           4:59:00 |     4     0     0   100 |
+|      WAN/USDT |         1 |           7.89 |           7.89 |             2.508 |           0.25 |  4 days, 14:15:00 |     1     0     0   100 |
+|    VANRY/USDT |         6 |           1.60 |           9.60 |             2.399 |           0.24 |          15:02:00 |     6     0     0   100 |
+|     VIDT/USDT |         3 |           2.89 |           8.67 |             2.169 |           0.22 |          19:07:00 |     3     0     0   100 |
+|     DATA/USDT |         4 |           1.95 |           7.82 |             1.956 |           0.20 |    1 day, 1:48:00 |     4     0     0   100 |
+|      FUN/USDT |         3 |           1.90 |           5.69 |             1.931 |           0.19 |   5 days, 3:25:00 |     3     0     0   100 |
+|       OM/USDT |         4 |           1.84 |           7.35 |             1.838 |           0.18 |           2:10:00 |     4     0     0   100 |
+|     KAVA/USDT |         1 |           7.06 |           7.06 |             1.766 |           0.18 |   1 day, 10:45:00 |     1     0     0   100 |
+|      RLC/USDT |         2 |           1.37 |           2.74 |             1.676 |           0.17 |  8 days, 11:45:00 |     2     0     0   100 |
+|      KMD/USDT |         2 |           3.30 |           6.61 |             1.647 |           0.16 |           0:52:00 |     2     0     0   100 |
+|       SC/USDT |         2 |           2.86 |           5.73 |             1.432 |           0.14 |          22:30:00 |     2     0     0   100 |
+|     DOCK/USDT |         3 |           1.73 |           5.20 |             1.300 |           0.13 |           4:17:00 |     3     0     0   100 |
+|      REQ/USDT |         2 |           2.44 |           4.88 |             1.219 |           0.12 |           4:40:00 |     2     0     0   100 |
+|      ETC/USDT |         2 |           1.33 |           2.67 |             1.098 |           0.11 |  3 days, 22:25:00 |     2     0     0   100 |
+|      CHZ/USDT |         2 |           1.36 |           2.72 |             1.060 |           0.11 |  4 days, 22:38:00 |     2     0     0   100 |
+|      ARK/USDT |         2 |           2.13 |           4.26 |             1.052 |           0.11 |           3:05:00 |     2     0     0   100 |
+|    CYBER/USDT |         2 |           1.97 |           3.95 |             0.986 |           0.10 |           1:28:00 |     2     0     0   100 |
+|      DGB/USDT |         2 |           1.21 |           2.41 |             0.930 |           0.09 |  4 days, 10:45:00 |     2     0     0   100 |
+|      AMB/USDT |         3 |           0.95 |           2.86 |             0.907 |           0.09 |          19:03:00 |     3     0     0   100 |
+|   PENDLE/USDT |         2 |           1.72 |           3.45 |             0.857 |           0.09 |          12:25:00 |     2     0     0   100 |
+|     BLUR/USDT |         2 |           1.64 |           3.29 |             0.822 |           0.08 |           1:00:00 |     2     0     0   100 |
+|      SYN/USDT |         2 |           0.81 |           1.63 |             0.821 |           0.08 |    1 day, 0:30:00 |     2     0     0   100 |
+|      SEI/USDT |         1 |           3.26 |           3.26 |             0.817 |           0.08 |           9:00:00 |     1     0     0   100 |
+|      WLD/USDT |         1 |           3.25 |           3.25 |             0.814 |           0.08 |   2 days, 5:40:00 |     1     0     0   100 |
+|    FRONT/USDT |         3 |           1.07 |           3.21 |             0.799 |           0.08 |          13:13:00 |     3     0     0   100 |
+|     OSMO/USDT |         4 |           0.78 |           3.10 |             0.776 |           0.08 |           9:58:00 |     4     0     0   100 |
+|     EGLD/USDT |         2 |           1.53 |           3.07 |             0.761 |           0.08 |   3 days, 4:28:00 |     2     0     0   100 |
+|      XAI/USDT |         1 |           1.42 |           1.42 |             0.750 |           0.08 |   2 days, 3:20:00 |     1     0     0   100 |
+|     FIDA/USDT |         2 |           1.46 |           2.92 |             0.731 |           0.07 |          23:02:00 |     2     0     0   100 |
+|      RAY/USDT |         1 |           2.87 |           2.87 |             0.717 |           0.07 |           6:10:00 |     1     0     0   100 |
+|      CRV/USDT |         2 |           1.30 |           2.59 |             0.648 |           0.06 |           9:52:00 |     2     0     0   100 |
+|      NFP/USDT |         2 |           1.28 |           2.56 |             0.637 |           0.06 |           2:50:00 |     2     0     0   100 |
+|       AI/USDT |         2 |           1.28 |           2.56 |             0.617 |           0.06 |          20:20:00 |     2     0     0   100 |
+|       IQ/USDT |         4 |           0.60 |           2.40 |             0.602 |           0.06 |           4:15:00 |     4     0     0   100 |
+|  AUCTION/USDT |         1 |           2.40 |           2.40 |             0.599 |           0.06 |           8:35:00 |     1     0     0   100 |
+|      ORN/USDT |         1 |           2.34 |           2.34 |             0.585 |           0.06 |           0:45:00 |     1     0     0   100 |
+|   ALPINE/USDT |         2 |           1.11 |           2.23 |             0.557 |           0.06 |           4:30:00 |     2     0     0   100 |
+|      FIO/USDT |         2 |           1.03 |           2.05 |             0.514 |           0.05 |           7:30:00 |     2     0     0   100 |
+|    STORJ/USDT |         1 |           1.17 |           1.17 |             0.508 |           0.05 |   5 days, 9:05:00 |     1     0     0   100 |
+|      BAR/USDT |         2 |           0.97 |           1.94 |             0.485 |           0.05 |           5:42:00 |     2     0     0   100 |
+|     LOKA/USDT |         2 |           0.96 |           1.92 |             0.480 |           0.05 |           5:02:00 |     2     0     0   100 |
+|      YGG/USDT |         2 |           0.92 |           1.84 |             0.460 |           0.05 |           2:18:00 |     2     0     0   100 |
+|      DIA/USDT |         1 |           1.81 |           1.81 |             0.453 |           0.05 |           4:50:00 |     1     0     0   100 |
+|      REN/USDT |         1 |           1.72 |           1.72 |             0.431 |           0.04 |          12:15:00 |     1     0     0   100 |
+|      SUI/USDT |         1 |           1.48 |           1.48 |             0.370 |           0.04 |           0:20:00 |     1     0     0   100 |
+|      AXS/USDT |         1 |           1.46 |           1.46 |             0.366 |           0.04 |          15:20:00 |     1     0     0   100 |
+|    PORTO/USDT |         2 |           0.71 |           1.42 |             0.354 |           0.04 |   1 day, 21:30:00 |     2     0     0   100 |
+|     POLS/USDT |         1 |           1.32 |           1.32 |             0.331 |           0.03 |           0:20:00 |     1     0     0   100 |
+|    SUSHI/USDT |         2 |           0.63 |           1.25 |             0.313 |           0.03 |   1 day, 11:15:00 |     2     0     0   100 |
+|      ONT/USDT |         1 |           1.21 |           1.21 |             0.303 |           0.03 |           3:10:00 |     1     0     0   100 |
+|      LSK/USDT |         1 |           1.21 |           1.21 |             0.301 |           0.03 |           1:10:00 |     1     0     0   100 |
+|    LAZIO/USDT |         2 |           0.59 |           1.19 |             0.297 |           0.03 |           7:52:00 |     2     0     0   100 |
+|      LDO/USDT |         1 |           0.57 |           0.57 |             0.284 |           0.03 |          18:20:00 |     1     0     0   100 |
+|     CITY/USDT |         2 |           0.55 |           1.11 |             0.277 |           0.03 |          11:25:00 |     2     0     0   100 |
+|      SFP/USDT |         1 |           1.08 |           1.08 |             0.267 |           0.03 |           8:40:00 |     1     0     0   100 |
+|     MBOX/USDT |         1 |           0.90 |           0.90 |             0.225 |           0.02 |           5:00:00 |     1     0     0   100 |
+|      XEM/USDT |         1 |           0.82 |           0.82 |             0.204 |           0.02 |           7:50:00 |     1     0     0   100 |
+|     HIVE/USDT |         1 |           0.80 |           0.80 |             0.199 |           0.02 |           5:20:00 |     1     0     0   100 |
+|      STG/USDT |         1 |           0.73 |           0.73 |             0.183 |           0.02 |           2:10:00 |     1     0     0   100 |
+|     PAXG/USDT |         2 |           0.35 |           0.70 |             0.174 |           0.02 |   6 days, 3:55:00 |     2     0     0   100 |
+|      STX/USDT |         1 |           0.70 |           0.70 |             0.174 |           0.02 |           8:45:00 |     1     0     0   100 |
+|     ASTR/USDT |         1 |           0.69 |           0.69 |             0.172 |           0.02 |           0:30:00 |     1     0     0   100 |
+|      WRX/USDT |         1 |           0.67 |           0.67 |             0.167 |           0.02 |           1:55:00 |     1     0     0   100 |
+|     DEXE/USDT |         1 |           0.67 |           0.67 |             0.166 |           0.02 |           3:45:00 |     1     0     0   100 |
+|      GRT/USDT |         1 |           0.61 |           0.61 |             0.152 |           0.02 |          13:15:00 |     1     0     0   100 |
+|     USTC/USDT |         1 |           0.59 |           0.59 |             0.149 |           0.01 |          14:40:00 |     1     0     0   100 |
+|     VITE/USDT |         1 |           0.59 |           0.59 |             0.147 |           0.01 |           3:55:00 |     1     0     0   100 |
+|      CLV/USDT |         1 |           0.59 |           0.59 |             0.147 |           0.01 |           5:00:00 |     1     0     0   100 |
+|     ARDR/USDT |         1 |           0.59 |           0.59 |             0.146 |           0.01 |           6:15:00 |     1     0     0   100 |
+|     CELR/USDT |         1 |           0.56 |           0.56 |             0.140 |           0.01 |           6:25:00 |     1     0     0   100 |
+|      MDT/USDT |         1 |           0.55 |           0.55 |             0.137 |           0.01 |           0:50:00 |     1     0     0   100 |
+|      OGN/USDT |         1 |           0.54 |           0.54 |             0.135 |           0.01 |          18:40:00 |     1     0     0   100 |
+|     HOOK/USDT |         1 |           0.54 |           0.54 |             0.134 |           0.01 |           2:50:00 |     1     0     0   100 |
+|     CTSI/USDT |         1 |           0.53 |           0.53 |             0.133 |           0.01 |           2:45:00 |     1     0     0   100 |
+|        T/USDT |         1 |           0.52 |           0.52 |             0.131 |           0.01 |           5:35:00 |     1     0     0   100 |
+|      NEO/USDT |         1 |           0.51 |           0.51 |             0.128 |           0.01 |           2:50:00 |     1     0     0   100 |
+|      TRX/USDT |         1 |           0.51 |           0.51 |             0.128 |           0.01 |  3 days, 15:15:00 |     1     0     0   100 |
+|     BAND/USDT |         1 |           0.51 |           0.51 |             0.126 |           0.01 |           6:35:00 |     1     0     0   100 |
+|     TUSD/USDT |         1 |           0.00 |           0.00 |             0.001 |           0.00 | 13 days, 11:10:00 |     1     0     0   100 |
+|      BTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ETH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      LTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     QTUM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ADA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XRP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      EOS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     IOTA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XLM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ICX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     NULS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      VET/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     USDC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     LINK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    WAVES/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ONG/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      HOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ZIL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ZRX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FET/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BAT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ZEC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     IOST/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DASH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      OMG/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    THETA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ENJ/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    MATIC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    TFUEL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ONE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FTM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ALGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DOGE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DUSK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ANKR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      WIN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      MTL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DENT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CVC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XTZ/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      RVN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     HBAR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      NKN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ARPA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     IOTX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     CTXC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BCH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     TROY/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FTT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      EUR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DREP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BNT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      LTO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      MBL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     COTI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     STPT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SOL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CHR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      KNC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      LRC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      PNT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     COMP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ZEN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SNX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     VTHO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SXP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      MKR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      DCR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     MANA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      YFI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BAL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BLZ/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     IRIS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      JST/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     SAND/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    OCEAN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      NMR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      DOT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     LUNA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      RSR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     WNXM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      TRB/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      KSM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     RUNE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      UMA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BEL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     WING/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      UNI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      OXT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     AVAX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FLM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      UTK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XVS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    ALPHA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     AAVE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     NEAR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FIL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      INJ/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    AUDIO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CTK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     AKRO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     HARD/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    STRAX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     UNFI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ROSE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      AVA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SKL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      JUV/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      PSG/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    1INCH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     REEF/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|       OG/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ATM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ASR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     CELO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      RIF/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      TRU/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CKB/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      TWT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     FIRO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      LIT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DODO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     CAKE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ACM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   BADGER/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FIS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     POND/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DEGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    ALICE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     LINA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    SUPER/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CFX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      TKO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   PUNDIX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      TLM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    FORTH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BAKE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   BURGER/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SLP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     SHIB/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ICP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|       AR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      MDX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     MASK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      LPT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XVG/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ATA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ERN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     KLAY/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      PHA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BOND/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      MLN/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      C98/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      QNT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     FLOW/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     MINA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     FARM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   ALPACA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    QUICK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FOR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     GHST/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     WAXP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GNO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XEC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ELF/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     DYDX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     IDEX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     USDP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     GALA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ILV/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SYS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|       DF/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CVP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     AGLD/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      RAD/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BETA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     RARE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    CHESS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ADX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      DAR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BNX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     MOVR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ENS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     KP3R/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|       QI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     POWR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      VGX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      AMP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      PYR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     RNDR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ALCX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   SANTOS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BICO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     FLUX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      FXS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    VOXEL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     HIGH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      CVX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|   PEOPLE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     OOKI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    SPELL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      JOE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ACH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      IMX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     GLMR/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     SCRT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     API3/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BTTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ACA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      XNO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      WOO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GMT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      KDA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      APE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      BSW/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BIFI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    STEEM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      MOB/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     NEXO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      REI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GAL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      EPX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|       OP/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    LEVER/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     LUNC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GMX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    POLYX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      APT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      HFT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      PHB/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    MAGIC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     HIFI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      RPL/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     PROS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     AGIX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GNS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      VIB/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SSV/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     LQTY/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GAS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GLM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     PROM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      QKC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      UFT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|       ID/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     LOOM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      OAX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     RDNT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     WBTC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      EDU/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    AERGO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     PEPE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    FLOKI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      AST/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      SNT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    COMBO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ARKM/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    WBETH/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    FDUSD/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      GFT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      TIA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     MEME/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     ORDI/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    BEAMX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     PIVX/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      VIC/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      JTO/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+| 1000SATS/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     BONK/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ACE/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|    MANTA/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|      ALT/USDT |         0 |           0.00 |           0.00 |             0.000 |           0.00 |              0:00 |     0     0     0     0 |
+|     AEUR/USDT |         1 |          -0.26 |          -0.26 |            -0.066 |          -0.01 |  3 days, 23:30:00 |     0     0     1     0 |
+|    CREAM/USDT |         1 |          -1.65 |          -1.65 |            -0.412 |          -0.04 |          21:15:00 |     0     0     1     0 |
+|      SUN/USDT |         5 |           0.12 |           0.61 |            -0.544 |          -0.05 |   2 days, 0:54:00 |     4     0     1  80.0 |
+|     ATOM/USDT |         1 |          -2.71 |          -2.71 |            -0.676 |          -0.07 |          14:15:00 |     0     0     1     0 |
+|      COS/USDT |         2 |          -1.88 |          -3.76 |            -0.702 |          -0.07 | 13 days, 15:28:00 |     1     0     1  50.0 |
+|      KEY/USDT |         1 |         -12.83 |         -12.83 |            -7.403 |          -0.74 | 28 days, 20:45:00 |     0     0     1     0 |
+|     STMX/USDT |         3 |          -3.06 |          -9.17 |            -7.846 |          -0.78 |   9 days, 6:52:00 |     2     0     1  66.7 |
+|    JASMY/USDT |         1 |         -20.87 |         -20.87 |           -65.124 |          -6.51 | 28 days, 20:40:00 |     0     0     1     0 |
+|     PERP/USDT |         2 |         -11.74 |         -23.48 |          -119.777 |         -11.98 | 13 days, 19:35:00 |     1     0     1  50.0 |
+|         TOTAL |       157 |           0.87 |         137.17 |          -131.205 |         -13.12 |   2 days, 0:45:00 |   148     0     9  94.3 |
+=========================================================== LEFT OPEN TRADES REPORT ===========================================================
+|       Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |      Avg Duration |   Win  Draw  Loss  Win% |
+|------------+-----------+----------------+----------------+-------------------+----------------+-------------------+-------------------------|
+|  PAXG/USDT |         1 |           0.15 |           0.15 |             0.037 |           0.00 | 10 days, 22:10:00 |     1     0     0   100 |
+|  TUSD/USDT |         1 |           0.00 |           0.00 |             0.001 |           0.00 | 13 days, 11:10:00 |     1     0     0   100 |
+|  AEUR/USDT |         1 |          -0.26 |          -0.26 |            -0.066 |          -0.01 |  3 days, 23:30:00 |     0     0     1     0 |
+| CREAM/USDT |         1 |          -1.65 |          -1.65 |            -0.412 |          -0.04 |          21:15:00 |     0     0     1     0 |
+|  ATOM/USDT |         1 |          -2.71 |          -2.71 |            -0.676 |          -0.07 |          14:15:00 |     0     0     1     0 |
+|   COS/USDT |         1 |          -4.72 |          -4.72 |            -1.181 |          -0.12 |           8:05:00 |     0     0     1     0 |
+|   SUN/USDT |         1 |          -2.54 |          -2.54 |            -1.333 |          -0.13 |  9 days, 12:15:00 |     0     0     1     0 |
+|   KEY/USDT |         1 |         -12.83 |         -12.83 |            -7.403 |          -0.74 | 28 days, 20:45:00 |     0     0     1     0 |
+|  STMX/USDT |         1 |         -11.91 |         -11.91 |            -8.532 |          -0.85 | 27 days, 13:00:00 |     0     0     1     0 |
+| JASMY/USDT |         1 |         -20.87 |         -20.87 |           -65.124 |          -6.51 | 28 days, 20:40:00 |     0     0     1     0 |
+|  PERP/USDT |         1 |         -29.02 |         -29.02 |          -121.162 |         -12.12 | 27 days, 12:40:00 |     0     0     1     0 |
+|      TOTAL |        11 |          -7.85 |         -86.35 |          -205.852 |         -20.59 | 13 days, 20:42:00 |     2     0     9  18.2 |
+============================================================================== ENTER TAG STATS ===============================================================================
+|                                         TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|---------------------------------------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------|
+| buy1eworsi_sr_buy_midema_dbs_sr_buyema_dbs_ |         1 |           4.29 |           4.29 |             1.073 |           0.11 |         6:35:00 |     1     0     0   100 |
+|                 buy1eworsi_sr_buy_midsr_buy |         1 |           4.18 |           4.18 |             1.041 |           0.10 |         6:50:00 |     1     0     0   100 |
+|                      ema_dbs_sr_buyema_dbs_ |         2 |           1.19 |           2.38 |             0.918 |           0.09 | 4 days, 3:35:00 |     2     0     0   100 |
+|                                       cofi_ |         1 |           1.21 |           1.21 |             0.301 |           0.03 |         1:10:00 |     1     0     0   100 |
+|            sr_buy_midema_dbs_sr_buyema_dbs_ |       148 |           0.95 |         140.90 |           -17.452 |          -1.75 | 1 day, 21:33:00 |   140     0     8  94.6 |
+|                                 buy1eworsi_ |         4 |          -3.95 |         -15.79 |          -117.085 |         -11.71 | 7 days, 6:26:00 |     3     0     1  75.0 |
+|                                       TOTAL |       157 |           0.87 |         137.17 |          -131.205 |         -13.12 | 2 days, 0:45:00 |   148     0     9  94.3 |
+======================================================= EXIT REASON STATS ========================================================
+|        Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |
+|--------------------+---------+--------------------------+----------------+----------------+-------------------+----------------|
+|                psl |      88 |     88     0     0   100 |           1.86 |         164.05 |            58.662 |           4.1  |
+| trailing_stop_loss |      44 |     44     0     0   100 |           1.11 |          48.63 |            12.292 |           1.22 |
+|         force_exit |      11 |      2     0     9  18.2 |          -7.85 |         -86.35 |          -205.852 |          -2.16 |
+|     fib_618_sma_50 |       8 |      8     0     0   100 |           0.69 |           5.54 |             1.384 |           0.14 |
+|                roi |       6 |      6     0     0   100 |           0.89 |           5.31 |             2.31  |           0.13 |
+================== SUMMARY METRICS ==================
+| Metric                      | Value               |
+|-----------------------------+---------------------|
+| Backtesting from            | 2024-01-01 00:00:00 |
+| Backtesting to              | 2024-01-31 00:00:00 |
+| Max open trades             | 40                  |
+|                             |                     |
+| Total/Daily Avg Trades      | 157 / 5.23          |
+| Starting balance            | 1000 USDT           |
+| Final balance               | 868.795 USDT        |
+| Absolute profit             | -131.205 USDT       |
+| Total profit %              | -13.12%             |
+| CAGR %                      | -81.94%             |
+| Sortino                     | -2.09               |
+| Sharpe                      | -7.55               |
+| Calmar                      | -43.62              |
+| Profit factor               | 0.36                |
+| Expectancy (Ratio)          | -0.84 (-0.04)       |
+| Trades per day              | 5.23                |
+| Avg. daily profit %         | -0.44%              |
+| Avg. stake amount           | 34.511 USDT         |
+| Total trade volume          | 5418.173 USDT       |
+|                             |                     |
+| Best Pair                   | ARB/USDT 11.79%     |
+| Worst Pair                  | PERP/USDT -23.48%   |
+| Best trade                  | WAN/USDT 7.89%      |
+| Worst trade                 | PERP/USDT -29.02%   |
+| Best day                    | 17.074 USDT         |
+| Worst day                   | -205.852 USDT       |
+| Days win/draw/lose          | 23 / 6 / 1          |
+| Avg. Duration Winners       | 1 day, 6:56:00      |
+| Avg. Duration Loser         | 14 days, 5:36:00    |
+| Max Consecutive Wins / Loss | 147 / 5             |
+| Rejected Entry signals      | 0                   |
+| Entry/Exit Timeouts         | 0 / 0               |
+|                             |                     |
+| Min balance                 | 868.795 USDT        |
+| Max balance                 | 1074.648 USDT       |
+| Max % of account underwater | 19.16%              |
+| Absolute Drawdown (Account) | 19.16%              |
+| Absolute Drawdown           | 205.852 USDT        |
+| Drawdown high               | 74.647 USDT         |
+| Drawdown low                | -131.205 USDT       |
+| Drawdown Start              | 2024-01-30 15:55:00 |
+| Drawdown End                | 2024-01-31 00:00:00 |
+| Market change               | -5.79%              |
+=====================================================
+
+Backtested 2024-01-01 00:00:00 -> 2024-01-31 00:00:00 | Max open trades : 40
+========================================================================= STRATEGY SUMMARY =========================================================================
+|   Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit USDT |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |             Drawdown |
+|------------+-----------+----------------+----------------+-------------------+----------------+-----------------+-------------------------+----------------------|
+|      lambo |       157 |           0.87 |         137.17 |          -131.205 |         -13.12 | 2 days, 0:45:00 |   148     0     9  94.3 | 205.852 USDT  19.16% |
+====================================================================================================================================================================
+
+For more details, please look at the detail tables above
